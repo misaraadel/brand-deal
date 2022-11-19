@@ -1,0 +1,119 @@
+@media (max-width: 999px) {
+  .navbar {
+
+    &.scrolled .navbar-nav {
+      display: flex !important;
+      top: 74px;
+    }
+
+    .socail-data,
+    .form-contain {
+      display: none;
+    }
+
+    .nav-list li a {
+      width: 30px !important;
+      height: 30px !important;
+      
+      img {
+        width: 20px !important;
+        height: 20px !important;
+      }
+    }
+
+    .brand-name img {
+      width: 120px !important;
+    }
+
+    .hamburger{
+      display: block !important;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      position: absolute;
+      top: 84px;
+      right: -100%;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 40px 20px;
+      z-index: 999;
+      transition: all .3s linear;
+
+      li {
+        margin-inline-end: 0px !important;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.10);
+
+        &:last-child {
+          border-bottom: 0px !important;
+        }
+
+        a {
+          width: fit-content;
+        }
+      }
+
+      &.active-nav {
+        right: 0px !important;
+      }
+    }
+  }
+
+  header {
+    padding: 100px 0px 0px;
+
+    .image-content {
+      height: 180px;
+    }
+  }
+
+  .heading {
+    margin-bottom: 20px;
+
+    .see-more {
+      position: relative;
+      top: unset !important;
+      right: unset !important;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+  }
+
+  .work .flex-data {
+    flex-direction: column !important;
+
+    .box {
+      width: 100%;
+      margin-bottom: 40px;
+
+      &::after {
+        left: calc(50% - 24px);
+        top: unset !important;
+        bottom: -30px;
+        animation: translateY 2s linear infinite !important;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 0px !important;
+
+    .contain.flex-end,
+    .contain.padding-contain {
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      align-content: flex-start !important;
+    }
+
+    h1 {
+      margin-bottom: 15px !important;
+    }
+
+    .copyrights {
+      margin-top: 20px;
+    }
+  }
+}
