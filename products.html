@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="assets/css/lib/animate.css" />
     <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css" />
     <link rel="stylesheet" href="assets/css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/lib/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/lib/jquery.ui.slider-rtl.css" />
+    <link rel="stylesheet" href="assets/css/lib/price_range_style.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -213,18 +216,41 @@
 
                 <div class="category-contain">
                   <h2 class="head">
-                    المدينة
+                    السعر
                   </h2>
 
-                  <form class="form-content">
-                    <div class="form-group select-option">
+                  <form class="form-contain">
+                    <div class="form-group">
+                      <div class="price-wrapper">
+                        <div id="single-slider-range" class="price-filter-range" name="rangeInput"></div>
+                        <div class="inputs-wrapper">
+                          <input type="text" min=0 max="9900" oninput="validity.valid||(value='0');" value="1" id="single_min_price" class="price-range-field" />
+                          <input type="text" min=0 max="10000" oninput="validity.valid||(value='10000');" value="100" id="single_max_price" class="price-range-field" />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="category-contain">
+                  <h2 class="head">
+                    المقاس
+                  </h2>
+
+                  <form class="form-contain">
+                    <div class="from-group select-option">
+                      <img
+                        src="assets/images/form/size.svg"
+                        loading="lazy"
+                        alt="" />
+
                       <select class="form-control">
                         <option value="">
-                          إخترالمدن
+                          M
                         </option>
 
                         <option value="">
-                          إخترالمدن
+                          LG
                         </option>
                       </select>
                     </div>
@@ -232,7 +258,7 @@
                     <div class="data-selected">
                       <div class="data">
                         <span class="name">
-                          المدينة المنورة
+                          Medium
                         </span>
 
                         <a href="#" class="close">
@@ -242,7 +268,7 @@
 
                       <div class="data">
                         <span class="name">
-                          الطائف
+                          Large
                         </span>
 
                         <a href="#" class="close">
@@ -253,32 +279,508 @@
                   </form>
                 </div>
 
-                <div class="category-contain border-0">
+                <div class="category-contain">
                   <h2 class="head">
-                    نطاق التأجير
+                    النوع
                   </h2>
 
-                  <form class="form-content">
-                    <div class="form-group">
-                      <div class="price-wrapper">
-                        <div id="single-slider-range" class="price-filter-range" name="rangeInput"></div>
-                        <div class="inputs-wrapper">
-                          <input type="text" min=0 max="9900" oninput="validity.valid||(value='0');" value=" يوم 1" id="single_min_price" class="price-range-field" />
-                          <input type="text" min=0 max="10000" oninput="validity.valid||(value='10000');" value="100 يوم" id="single_max_price" class="price-range-field" />
+                  <form class="form-contain">
+                    <div class="flex-data">
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <input type="radio" class="radio-check"/>
+      
+                          <label class="radio-title">
+                            الكل
+                          </label>
                         </div>
+                      </div>
+
+                      <div class="wrapper">
+                        <input type="radio" class="radio-check"/>
+    
+                        <label class="radio-title">
+                          نسائي
+                        </label>
+                      </div>
+
+                      <div class="wrapper">
+                        <input type="radio" class="radio-check"/>
+    
+                        <label class="radio-title">
+                          رجالي
+                        </label>
                       </div>
                     </div>
                   </form>
                 </div>
 
-                <div class="button-contain">
-                  <a href="#" class="btn-img-contain gold-border">
-                    <span class="btn-data">
-                      فرز النتائج
+                <div class="category-contain">
+                  <h2 class="head">
+                    الموديل
+                  </h2>
+
+                  <form class="form-contain">
+                    <div class="flex-data">
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <input type="radio" class="radio-check"/>
+      
+                          <label class="radio-title">
+                            موديل 1
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="wrapper">
+                        <input type="radio" class="radio-check"/>
+    
+                        <label class="radio-title">
+                          موديل 2
+                        </label>
+                      </div>
+                      
+                      <div class="wrapper">
+                        <input type="radio" class="radio-check"/>
+    
+                        <label class="radio-title">
+                          موديل 3
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="category-contain border-bottom-0 low-margin">
+                  <h2 class="head">
+                    الماركة
+                  </h2>
+
+                  <form class="form-contain">
+                    <div class="flex-data">
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <input type="radio" class="radio-check"/>
+      
+                          <label class="radio-title">
+                            رولكس
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="wrapper">
+                        <input type="radio" class="radio-check"/>
+    
+                        <label class="radio-title">
+                          اوميجا
+                        </label>
+                      </div>
+                      
+                      <div class="wrapper">
+                        <input type="radio" class="radio-check"/>
+    
+                        <label class="radio-title">
+                          شوبارد
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="form-contain">
+                  <a href="#" class="custom-btn mt-3">
+                    <span>
+                      فرز النتائج 
                     </span>
                   </a>
                 </div>
+              </div>
             </div>
+
+            <div class="col-lg-9 col-12">
+              <div class="row">
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-6 mb-3">
+                  <div class="product-box">
+                    <div class="image-content">
+                      <img src="assets/images/products/product_1.webp" loading="lazy" alt="" />
+  
+                      <div class="type">
+                        جديد
+                      </div>
+                    </div>
+  
+                    <div class="contain">
+                      <h2>
+                        سقنتشر
+                      </h2>
+  
+                      <p class="desc">
+                        Van Cleef
+                      </p>
+  
+                      <div class="flex-data">
+                        <p>
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
+                        </p>
+  
+                        <a href="#" class="custom-btn">
+                          <span>
+                            قابل للتفاوض
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <ul class="page-numbers">
+                    <li class="number-item">
+                      <a href="#" class="number-link active">
+                        1
+                      </a>
+                    </li>
+
+                    <li class="number-item">
+                      <a href="#" class="number-link">
+                        2
+                      </a>
+                    </li>
+
+                    <li class="number-item">
+                      <a href="#" class="number-link">
+                        3
+                      </a>
+                    </li>
+
+                    <li class="number-item">
+                      <a href="#" class="number-link">
+                        4
+                      </a>
+                    </li>
+
+                    <li class="number-item">
+                      <a href="#" class="number-link">
+                        5
+                      </a>
+                    </li>
+
+                    <li class="number-item">
+                      <a href="#" class="number-link">
+                        6
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -398,9 +900,11 @@
     </footer>
 
     <script src="assets/js/lib/jquery4.js"></script>
+    <script src="assets/js/lib/jquery-ui.min.js"></script>
     <script src="assets/js/lib/popper.js"></script>
     <script src="assets/js/lib/bootstrap.js"></script>
     <script src="assets/js/lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/lib/price_range_script.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

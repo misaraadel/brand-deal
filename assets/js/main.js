@@ -99,6 +99,23 @@ $(document).ready(function () {
       },
     },
   });
+
+  $("#single-slider-range").slider({
+    range:true,
+    orientation:"horizontal",
+    min: 0,
+    isRTL: true,
+    max: 10000,
+    values: [0, 10000],
+    step: 100,
+    slide:function (event, ui) {
+      if (ui.values[0] == ui.values[1]) {
+        return false;
+      }     
+      $("#single_min_price").val(ui.values[0]);
+      $("#single_max_price").val(ui.values[1]);
+    }
+  });
 });
 
 $(document).ready(function() {
