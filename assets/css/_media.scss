@@ -61,12 +61,17 @@
     }
   }
 
+  
   header {
     padding: 100px 0px 0px;
 
     .image-content {
       height: 180px;
     }
+  }
+
+  .sub-header {
+    padding: 120px 0px 40px;
   }
 
   .heading {
@@ -115,5 +120,69 @@
     .copyrights {
       margin-top: 20px;
     }
+  }
+
+  .login-page {
+    .mobile-hidden {
+      display: none;
+    }
+
+    &::after {
+      display: block;
+    }
+
+    .login-contain {
+      padding: 20px 15px;
+
+      h1 {
+        font-size: 20px !important;
+      }
+
+      .brand-name img {
+        height: 100px !important;
+      }
+
+      .code_input .code-container input {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  .brands .box {
+    height: 80px;
+  }
+
+  .product-box {
+    .image-content {
+      height: 100px;
+    }
+
+    .contain {
+      padding: 10px 0px;
+
+      h2 {
+        font-size: 15px !important;
+      }
+
+      .desc {
+        font-size: 12px !important;
+        margin: 8px 0px !important;
+      }
+
+      .flex-data {
+        flex-direction: column;
+        padding-top: 8px;
+
+        .custom-btn {
+          width: 90%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .products .swiper-wrapper {
+    padding-top: 15px;
   }
 }

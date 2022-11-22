@@ -50,6 +50,10 @@ $(document).ready(function () {
       clickable: true,
     },
     breakpoints: {
+      300: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+      },
       640: {
         slidesPerView: 2,
         spaceBetween: 18,
@@ -77,6 +81,10 @@ $(document).ready(function () {
       clickable: true,
     },
     breakpoints: {
+      300: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
       640: {
         slidesPerView: 2,
         spaceBetween: 18,
@@ -90,5 +98,35 @@ $(document).ready(function () {
         spaceBetween: 18,
       },
     },
+  });
+});
+
+$(document).ready(function() {
+  let i = 120;
+  let a = setInterval(function() {
+    if (i < 10)
+      document.querySelector('.count_down').textContent = `0${i}`;
+    else {
+      document.querySelector('.count_down').textContent = `${i}`
+    }
+    i--;
+    if (i < 0) {
+      clearInterval(a);
+    }
+  }, 1000)
+});
+
+$(document).ready(function() {
+  const codes = document.querySelectorAll('.code');
+  codes[0].focus();
+  codes.forEach((code, idx) => {
+    code.addEventListener('keydown', (e) => {
+      if (e.key >= 0 && e.key <= 9) {
+        codes[idx].value = '';
+        setTimeout(() => codes[idx + 1].focus(), 10);
+      } else if (e.key === 'Backspace') {
+        setTimeout(() => codes[idx - 1].focus(), 10);
+      }
+    });
   });
 });
