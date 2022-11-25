@@ -1345,6 +1345,10 @@ footer {
     &.text-area {
       height: 100px !important;
 
+      img {
+        top: 10px;
+      }
+
       .form-control {
         height: 100%;
         resize: none;
@@ -2183,6 +2187,21 @@ footer {
     box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.03);
     transition: all .3s linear;
 
+    &.notfication {
+      .price {
+        font-size: 14px !important;  
+        font-weight: 500 !important;
+      }
+
+      .time {
+        text-align: end !important;
+      }
+
+      &:hover h2 {
+        color: var(--dark-color) !important;
+      }
+    }
+
     &.large-box {
       padding: 30px 20px;
     }
@@ -2534,6 +2553,145 @@ footer {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+.profile {
+  background-color: #f8f8f8;
+
+  .profile-card {
+    width: 100%;
+    padding: 20px 15px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+
+    .image-content {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    h1 {
+      color: var(--dark-color);
+      text-align: center;
+      font-size: 25px;
+      font-weight: 900;
+      margin: 15px 0px;
+    }
+
+    .nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: flex-start;
+      border: 0px;
+      border-radius: 0px;
+
+      li {
+        width: 100%;
+        padding: 10px 0px;
+        position: relative;
+        z-index: 9;
+        border-bottom: 1px solid #ddd;
+
+        &:last-child {
+          border-bottom: 0px !important;
+        }
+
+        a {
+          width: 100%;
+          display: flex;
+          border: 0px;
+          border-radius: 0px;
+          align-items: center;
+          align-content: center;
+          position: relative;
+          z-index: 9;
+          padding-inline-start: 10px;
+
+          img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            margin-inline-end: 10px;
+          }
+
+          span {
+            color: var(--dark-color);
+            font-size: 15px;
+            font-weight: 500;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: var(--secondary-color);
+            top: 0;
+            right: 0;
+            z-index: 2;
+            transform: scaleY(0);
+            transition: all .3s linear;
+          }
+
+          &:hover, &.active {
+            border: 0px;
+            border-radius: 0px;
+
+            span {
+              color: var(--secondary-color);
+            }
+
+            img {
+              filter: var(--primary-color);
+            }
+
+            &::after {
+              transform: scaleY(1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tab-pane {
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.02);
+    overflow: hidden;
+
+    .contain {
+      transform: translateX(-20px);
+      transition: all .3s linear;
+    }
+
+    &.active.show {
+      .contain {
+        transform: translateX(0px)
+      }
     }
   }
 }
