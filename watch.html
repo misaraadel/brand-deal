@@ -139,7 +139,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="watch.html" class="nav-link">
+          <a href="watch.html" class="nav-link active">
             ساعات
           </a>
         </li>
@@ -157,7 +157,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="auction.html" class="nav-link active">
+          <a href="auction.html" class="nav-link">
             المزاد
           </a>
         </li>
@@ -181,7 +181,7 @@
         <div class="container">
           <div class="contain">
             <h1>
-              المزاد
+              الساعات
             </h1>
 
             <ul class="breadcurmb-data">
@@ -193,7 +193,7 @@
 
               <li>
                 <span>
-                  المزاد
+                  الساعات
                 </span>
               </li>
             </ul>
@@ -216,6 +216,71 @@
 
                 <div class="category-contain">
                   <h2 class="head">
+                    السعر
+                  </h2>
+
+                  <form class="form-contain">
+                    <div class="form-group">
+                      <div class="price-wrapper">
+                        <div id="single-slider-range" class="price-filter-range" name="rangeInput"></div>
+                        <div class="inputs-wrapper">
+                          <input type="text" min=0 max="9900" oninput="validity.valid||(value='0');" value="1" id="single_min_price" class="price-range-field" />
+                          <input type="text" min=0 max="10000" oninput="validity.valid||(value='10000');" value="100" id="single_max_price" class="price-range-field" />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="category-contain">
+                  <h2 class="head">
+                    المقاس
+                  </h2>
+
+                  <form class="form-contain">
+                    <div class="from-group select-option">
+                      <img
+                        src="assets/images/form/size.svg"
+                        loading="lazy"
+                        alt="" />
+
+                      <select class="form-control">
+                        <option value="">
+                          M
+                        </option>
+
+                        <option value="">
+                          LG
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="data-selected">
+                      <div class="data">
+                        <span class="name">
+                          Medium
+                        </span>
+
+                        <a href="#" class="close">
+                          <img src="assets/images/close_circle.svg" alt="" />
+                        </a>
+                      </div>
+
+                      <div class="data">
+                        <span class="name">
+                          Large
+                        </span>
+
+                        <a href="#" class="close">
+                          <img src="assets/images/close_circle.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="category-contain">
+                  <h2 class="head">
                     النوع
                   </h2>
 
@@ -235,7 +300,7 @@
                         <input type="radio" class="radio-check"/>
     
                         <label class="radio-title">
-                          مجوهرات
+                          نسائي
                         </label>
                       </div>
 
@@ -243,55 +308,181 @@
                         <input type="radio" class="radio-check"/>
     
                         <label class="radio-title">
-                          ساعات
+                          رجالي
                         </label>
                       </div>
                     </div>
                   </form>
                 </div>
 
-                <div class="category-contain">
-                  <h2 class="head">
-                    المدة
-                  </h2>
-
-                  <form class="form-contain">
-                    <div class="flex-data">
-                      <div class="flex-data">
-                        <div class="wrapper">
-                          <input type="radio" class="radio-check"/>
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn head" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          الموديل
+                        </button>
+                      </h2>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <form class="form-contain">
+                          <div class="flex-data">
+                            <div class="flex-data">
+                              <div class="wrapper">
+                                <input type="radio" class="radio-check"/>
+            
+                                <label class="radio-title">
+                                  موديل 1
+                                </label>
+                              </div>
+                            </div>
       
-                          <label class="radio-title">
-                            القادم
-                          </label>
-                        </div>
-                      </div>
+                            <div class="wrapper">
+                              <input type="radio" class="radio-check"/>
+          
+                              <label class="radio-title">
+                                موديل 2
+                              </label>
+                            </div>
+                            
+                            <div class="wrapper">
+                              <input type="radio" class="radio-check"/>
+          
+                              <label class="radio-title">
+                                موديل 3
+                              </label>
+                            </div>
+                          </div>
 
-                      <div class="wrapper">
-                        <input type="radio" class="radio-check"/>
-    
-                        <label class="radio-title">
-                          الحالي
-                        </label>
-                      </div>
-                      
-                      <div class="wrapper">
-                        <input type="radio" class="radio-check"/>
-    
-                        <label class="radio-title">
-                          على وشك الانتهاء
-                        </label>
-                      </div>
+                          <a class="btn see-more" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <img src="assets/images/icons/arrow.svg" loading="lazy" alt="" />
 
-                      <div class="wrapper">
-                        <input type="radio" class="radio-check"/>
-    
-                        <label class="radio-title">
-                          المنتهي
-                        </label>
+                            <span>
+                              شاهد المزيد
+                            </span>
+                          </a>
+
+                          <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                              <div class="flex-data">
+                                <div class="flex-data">
+                                  <div class="wrapper">
+                                    <input type="radio" class="radio-check"/>
+                
+                                    <label class="radio-title">
+                                      موديل 1
+                                    </label>
+                                  </div>
+                                </div>
+          
+                                <div class="wrapper">
+                                  <input type="radio" class="radio-check"/>
+              
+                                  <label class="radio-title">
+                                    موديل 2
+                                  </label>
+                                </div>
+                                
+                                <div class="wrapper">
+                                  <input type="radio" class="radio-check"/>
+              
+                                  <label class="radio-title">
+                                    موديل 3
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
                       </div>
                     </div>
-                  </form>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn head collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          الماركة
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <form class="form-contain">
+                          <div class="flex-data">
+                            <div class="flex-data">
+                              <div class="wrapper">
+                                <input type="radio" class="radio-check"/>
+            
+                                <label class="radio-title">
+                                  رولكس
+                                </label>
+                              </div>
+                            </div>
+      
+                            <div class="wrapper">
+                              <input type="radio" class="radio-check"/>
+          
+                              <label class="radio-title">
+                                اوميجا
+                              </label>
+                            </div>
+                            
+                            <div class="wrapper">
+                              <input type="radio" class="radio-check"/>
+          
+                              <label class="radio-title">
+                                شوبارد
+                              </label>
+                            </div>
+                          </div>
+
+                          <a class="btn see-more" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                            <img src="assets/images/icons/arrow.svg" loading="lazy" alt="" />
+
+                            <span>
+                              شاهد المزيد
+                            </span>
+                          </a>
+
+                          <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                              <div class="flex-data">
+                                <div class="flex-data">
+                                  <div class="wrapper">
+                                    <input type="radio" class="radio-check"/>
+                
+                                    <label class="radio-title">
+                                      موديل 1
+                                    </label>
+                                  </div>
+                                </div>
+          
+                                <div class="wrapper">
+                                  <input type="radio" class="radio-check"/>
+              
+                                  <label class="radio-title">
+                                    موديل 2
+                                  </label>
+                                </div>
+                                
+                                <div class="wrapper">
+                                  <input type="radio" class="radio-check"/>
+              
+                                  <label class="radio-title">
+                                    موديل 3
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="form-contain">
@@ -345,7 +536,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -358,17 +549,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -379,7 +574,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -392,17 +587,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -413,7 +612,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -426,17 +625,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -447,7 +650,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -460,17 +663,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -481,7 +688,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -494,17 +701,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -515,7 +726,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -528,17 +739,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -549,7 +764,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -562,17 +777,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -583,7 +802,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -596,17 +815,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>
@@ -617,7 +840,7 @@
                 <div class="col-lg-4 col-6 mb-3 column">
                   <div class="product-box">
                     <div class="image-content">
-                      <img src="assets/images/products/auction.webp" loading="lazy" alt="" />
+                      <img src="assets/images/products/watch.webp" loading="lazy" alt="" />
   
                       <div class="type">
                         جديد
@@ -630,17 +853,21 @@
                       </h2>
   
                       <p class="desc">
-                        20,000 ريال
+                        Van Cleef
                       </p>
   
                       <div class="flex-data">
                         <p>
-                          ينتهي في
+                          20,000
+  
+                          <span>
+                            ريال
+                          </span>
                         </p>
   
                         <a href="#" class="custom-btn">
                           <span>
-                          منتهية الصلاحية
+                            قابل للتفاوض
                           </span>
                         </a>
                       </div>

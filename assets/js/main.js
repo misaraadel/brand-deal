@@ -116,6 +116,33 @@ $(document).ready(function () {
       $("#single_max_price").val(ui.values[1]);
     }
   });
+
+  $('.grid-btn.list').click(function() {
+    $('.products .column').addClass('list-box-view col-lg-6 col-12 mb-4 px-2');
+    $('.products .column').removeClass('col-lg-4 col-12 mb-4');
+    $('.products .column').removeClass('col-lg-12 col-12 mb-4');
+    $('.grid-btn.list').addClass('active');
+    $('.grid-btn.grid').removeClass('active');
+    $('.grid-btn.full-width').removeClass('active');
+  });
+
+  $('.grid-btn.grid').click(function() {
+    $('.products .column').removeClass('col-lg-12 col-12 mb-4');
+    $('.products .column').removeClass('list-box-view col-lg-6 col-12 mb-4 px-2');
+    $('.products .column').addClass('col-lg-4 col-12 mb-4');
+    $('.grid-btn.grid').addClass('active');
+    $('.grid-btn.list').removeClass('active');
+    $('.grid-btn.full-width').removeClass('active');
+  });
+
+  $('.grid-btn.full-width').click(function() {
+    $('.products .column').addClass('col-lg-12 col-12 mb-4');
+    $('.products .column').removeClass('col-lg-4 col-12 mb-4');
+    $('.products .column').removeClass('list-box-view col-lg-6 col-12 mb-4 px-2');
+    $('.grid-btn.full-width').addClass('active');
+    $('.grid-btn.grid').removeClass('active');
+    $('.grid-btn.list').removeClass('active');
+  });
 });
 
 $(document).ready(function() {
