@@ -26,6 +26,10 @@ $(document).ready(function () {
     $('body').toggleClass('overflowNone')
   });
 
+  $('.sort-icon').click(function(){
+    $('.sort-list').toggleClass('active');
+  });
+
   var swiper = new Swiper(".swiper-header", {
     loop: true,
     autoplay: {
