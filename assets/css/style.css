@@ -3336,6 +3336,22 @@ footer .copyrights p {
 .profile {
   background-color: #f8f8f8;
 }
+.profile .filter-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  z-index: 99;
+  display: none;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.profile .filter-icon img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .profile .profile-card {
   width: 100%;
   padding: 20px 15px;
@@ -3348,6 +3364,26 @@ footer .copyrights p {
   align-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
+}
+.profile .profile-card .close-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.profile .profile-card .close-icon img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .profile .profile-card .image-content {
   width: 80px;
@@ -3456,6 +3492,204 @@ footer .copyrights p {
 .profile .tab-pane.active.show .contain {
   transform: translateX(0px);
 }
+.profile .table-responsive {
+  width: 100%;
+  overflow-x: scroll;
+}
+.profile .table-responsive::-webkit-scrollbar, .profile .table-responsive::selection {
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+.profile .table-responsive table {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.1);
+}
+.profile .table-responsive table tr {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+.profile .table-responsive table th {
+  height: 56px;
+  background-color: var(--secondary-color);
+  -webkit-border-end: 1px solid rgba(128, 128, 128, 0.1);
+          border-inline-end: 1px solid rgba(128, 128, 128, 0.1);
+  vertical-align: middle;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 900;
+}
+.profile .table-responsive table td {
+  height: 56px;
+  background-color: var(--light-color);
+  font-size: 14px;
+  font-weight: 500;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-border-end: 1px solid rgba(128, 128, 128, 0.1);
+          border-inline-end: 1px solid rgba(128, 128, 128, 0.1);
+  color: var(--dark-color);
+}
+.profile .table-responsive table td a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+.profile .table-responsive table td .badge {
+  padding: 5px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.profile .table-responsive table td .type {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: var(--light-color);
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.profile .table-responsive table td .flex-data {
+  display: flex;
+  padding: 0px 10px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.profile .table-responsive table td .flex-data .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  display: flex;
+  border-radius: 10px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.profile .table-responsive table td .flex-data .icon:last-child {
+  -webkit-margin-end: 0px !important;
+          margin-inline-end: 0px !important;
+}
+.profile .table-responsive table td .flex-data .icon img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profile .table-responsive table td .flex-data .icon:hover img {
+  -webkit-animation: tada 0.3s linear both;
+          animation: tada 0.3s linear both;
+}
+
+.order {
+  background-color: #fefefe;
+}
+.order .table-responsive {
+  width: 100%;
+  overflow-x: scroll;
+}
+.order .table-responsive::-webkit-scrollbar, .order .table-responsive::selection {
+  width: 0px !important;
+  height: 0px !important;
+  background: transparent !important;
+}
+.order .table-responsive table {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.1);
+}
+.order .table-responsive table tr {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+.order .table-responsive table th {
+  height: 56px;
+  background-color: var(--secondary-color);
+  -webkit-border-end: 1px solid rgba(128, 128, 128, 0.1);
+          border-inline-end: 1px solid rgba(128, 128, 128, 0.1);
+  vertical-align: middle;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 900;
+}
+.order .table-responsive table td {
+  height: 56px;
+  background-color: var(--light-color);
+  font-size: 14px;
+  font-weight: 500;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-border-end: 1px solid rgba(128, 128, 128, 0.1);
+          border-inline-end: 1px solid rgba(128, 128, 128, 0.1);
+  color: var(--dark-color);
+}
+.order .table-responsive table td .type {
+  display: flex;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: var(--light-color);
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.order .table-responsive table td .flex-data {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.order .table-responsive table td .flex-data .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  display: flex;
+  border-radius: 10px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.order .table-responsive table td .flex-data .icon:last-child {
+  -webkit-margin-end: 0px !important;
+          margin-inline-end: 0px !important;
+}
+.order .table-responsive table td .flex-data .icon img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.order .table-responsive table td .flex-data .icon:hover img {
+  -webkit-animation: tada 0.3s linear both;
+          animation: tada 0.3s linear both;
+}
+.order .box {
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px 10px;
+  background-color: var(--light-color);
+  border: 1px solid #eee;
+  text-align: center;
+}
+.order .box h1 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
 
 .fixed-icon {
   width: 50px;
@@ -3481,6 +3715,121 @@ footer .copyrights p {
 .fixed-icon:hover img {
   -webkit-animation: tada 0.3s linear both;
           animation: tada 0.3s linear both;
+}
+
+.order-reservation .heading {
+  text-align: unset !important;
+}
+.order-reservation .form-check {
+  position: relative;
+  padding-right: 0;
+  margin-bottom: 25px;
+}
+.order-reservation .form-check .form-check-label {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+.order-reservation .form-check .form-check-label .pay_logo {
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 20px auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.order-reservation .form-check .form-check-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100% !important;
+  cursor: pointer;
+  opacity: 0;
+}
+.order-reservation .form-check .form-check-input:checked ~ .form-check-label {
+  border: 1px solid var(--dark-color);
+}
+.order-reservation .form-check .form-check-input:checked ~ .form-check-label .name {
+  color: var(--dark-color);
+  font-weight: bold;
+}
+.order-reservation .order-data {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: var(--light-color);
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+.order-reservation .order-data .head {
+  width: 100%;
+  padding: 5px 0px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.order-reservation .order-data .head h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin: 0px;
+}
+.order-reservation .order-data .product-img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 10px 0px;
+}
+.order-reservation .order-data .list {
+  width: 100%;
+}
+.order-reservation .order-data .list li {
+  width: 100%;
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.order-reservation .order-data .list li span {
+  color: var(--dark-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+.order-reservation .order-data .list li span.name {
+  font-weight: 900;
+}
+.order-reservation .order-data .list li:last-child {
+  margin-bottom: 0px;
+}
+.order-reservation .order-data .list li.seprate {
+  padding: 0px !important;
+  border-top: 1px solid #eee;
+}
+.order-reservation .order-data .list li .custom-btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  outline: none;
+  border: 0px;
+  z-index: 9;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.order-reservation .order-data .list li .custom-btn span {
+  color: var(--dark-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+.order-reservation .order-data .list li .custom-btn:hover span {
+  -webkit-animation: storm 0.4s linear !important;
+          animation: storm 0.4s linear !important;
 }
 
 .questions .accordion .card, .questions .accordion .card-header, .questions .accordion .card-body {
@@ -3755,5 +4104,11 @@ footer .contain.padding-contain {
   }
   .mobile-hidden {
     display: none;
+  }
+  .profile .table-responsive table th {
+    min-width: 140px !important;
+  }
+  .profile .filter-icon {
+    display: block !important;
   }
 }/*# sourceMappingURL=style.css.map */

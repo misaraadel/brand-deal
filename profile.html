@@ -145,7 +145,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="brands.html" class="nav-link active">
+          <a href="brands.html" class="nav-link">
             الماركات العالمية
           </a>
         </li>
@@ -204,6 +204,10 @@
       <section class="profile general-section">
         <div class="container">
           <div class="row">
+            <!-- <div class="filter-icon">
+              <img src="assets/images/icons/sort.svg" loading="lazy" alt="" />
+            </div> -->
+
             <div class="col-lg-3 col-12 mb-4">
               <div class="profile-card">
                 <div class="image-content">
@@ -236,6 +240,36 @@
                   </li>
 
                   <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="cart-tab" data-toggle="tab" href="#cart" role="tab" aria-controls="cart" aria-selected="false">
+                      <img src="assets/images/icons/cart.svg" loading="lazy" alt="" />
+
+                      <span>
+                       مشترياتي 
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="add-product.html">
+                      <img src="assets/images/icons/cash.svg" loading="lazy" alt="" />
+
+                      <span>
+                        بيع الان 
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="notification-tab" data-toggle="tab" href="#notification" role="tab" aria-controls="notification" aria-selected="false">
+                      <img src="assets/images/icons/notification.svg" loading="lazy" alt="" />
+
+                      <span>
+                       الاشعارات 
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
                     <a class="nav-link" id="products-tab" data-toggle="tab" href="#products" role="tab" aria-controls="products" aria-selected="false">
                       <img src="assets/images/form/frame.svg" loading="lazy" alt="" />
 
@@ -246,11 +280,41 @@
                   </li>
 
                   <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="buyer-tab" data-toggle="tab" href="#buyer" role="tab" aria-controls="buyer" aria-selected="false">
+                      <img src="assets/images/icons/product.svg" loading="lazy" alt="" />
+
+                      <span>
+                        عروض للشراء 
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="sale-tab" data-toggle="tab" href="#sale" role="tab" aria-controls="sale" aria-selected="false">
+                      <img src="assets/images/icons/sale.svg" loading="lazy" alt="" />
+
+                      <span>
+                        عروض المشترين 
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
                     <a class="nav-link" id="favorite-tab" data-toggle="tab" href="#favorite" role="tab" aria-controls="favorite" aria-selected="false">
                       <img src="assets/images/icons/heart.svg" loading="lazy" alt="" />
 
                       <span>
                         المفضلة
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="question-tab" data-toggle="tab" href="#question" role="tab" aria-controls="question" aria-selected="false">
+                      <img src="assets/images/icons/question.svg" loading="lazy" alt="" />
+
+                      <span>
+                        اسئلتي 
                       </span>
                     </a>
                   </li>
@@ -426,6 +490,351 @@
                     </form>
                   </div>
                 </div>
+                
+                <div class="tab-pane fade" id="cart" role="tabpanel" aria-labelledby="cart-tab">
+                  <div class="contain">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              رقم الطلب 
+                            </th>
+
+                            <th>
+                              الاسم 
+                            </th>
+
+                            <th>
+                              الموديل
+                            </th>
+
+                            <th>
+                              قيمة المنتج
+                            </th>
+
+                            <th>
+                              المبلغ المدفوه
+                            </th>
+
+                            <th>
+                              المبلغ المتبقي
+                            </th>
+
+                            <th>
+                              حالة الدفع
+                            </th>
+
+                            <th>
+                              حالة الطلب
+                            </th>
+
+                            <th>
+                              العمليات
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              RES-6AOVXYLMNR	
+                            </td>
+
+                            <td>
+                              muath mohammed	
+                            </td>
+
+                            <td>
+                              كارتييه
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              0
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              لم يتم الدفع	
+                            </td>
+
+                            <td>
+                              <span class="type">
+                                new
+                              </span>
+                            </td>
+
+                            <td>
+                              <div class="flex-data">
+                                <a href="order-show.html" class="icon">
+                                  <img src="assets/images/icons/eye.svg" loading="lazy" alt="" />
+                                </a>
+
+                                <a href="order-reservation.html" class="icon">
+                                  <img src="assets/images/icons/cash.svg" loading="lazy" alt="" />
+                                </a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              RES-6AOVXYLMNR	
+                            </td>
+
+                            <td>
+                              muath mohammed	
+                            </td>
+
+                            <td>
+                              كارتييه
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              0
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              لم يتم الدفع	
+                            </td>
+
+                            <td>
+                              <span class="type">
+                                new
+                              </span>
+                            </td>
+
+                            <td>
+                              <div class="flex-data">
+                                <a href="order-show.html" class="icon">
+                                  <img src="assets/images/icons/eye.svg" loading="lazy" alt="" />
+                                </a>
+
+                                <a href="order-reservation.html" class="icon">
+                                  <img src="assets/images/icons/cash.svg" loading="lazy" alt="" />
+                                </a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              RES-6AOVXYLMNR	
+                            </td>
+
+                            <td>
+                              muath mohammed	
+                            </td>
+
+                            <td>
+                              كارتييه
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              0
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              لم يتم الدفع	
+                            </td>
+
+                            <td>
+                              <span class="type">
+                                new
+                              </span>
+                            </td>
+
+                            <td>
+                              <div class="flex-data">
+                                <a href="order-show.html" class="icon">
+                                  <img src="assets/images/icons/eye.svg" loading="lazy" alt="" />
+                                </a>
+
+                                <a href="order-reservation.html" class="icon">
+                                  <img src="assets/images/icons/cash.svg" loading="lazy" alt="" />
+                                </a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              RES-6AOVXYLMNR	
+                            </td>
+
+                            <td>
+                              muath mohammed	
+                            </td>
+
+                            <td>
+                              كارتييه
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              0
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              لم يتم الدفع	
+                            </td>
+
+                            <td>
+                              <span class="type">
+                                new
+                              </span>
+                            </td>
+
+                            <td>
+                              <div class="flex-data">
+                                <a href="order-show.html" class="icon">
+                                  <img src="assets/images/icons/eye.svg" loading="lazy" alt="" />
+                                </a>
+
+                                <a href="order-reservation.html" class="icon">
+                                  <img src="assets/images/icons/cash.svg" loading="lazy" alt="" />
+                                </a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              RES-6AOVXYLMNR	
+                            </td>
+
+                            <td>
+                              muath mohammed	
+                            </td>
+
+                            <td>
+                              كارتييه
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              0
+                            </td>
+
+                            <td>
+                              5,800
+                            </td>
+
+                            <td>
+                              لم يتم الدفع	
+                            </td>
+
+                            <td>
+                              <span class="type">
+                                new
+                              </span>
+                            </td>
+
+                            <td>
+                              <div class="flex-data">
+                                <a href="order-show.html" class="icon">
+                                  <img src="assets/images/icons/eye.svg" loading="lazy" alt="" />
+                                </a>
+
+                                <a href="order-reservation.html" class="icon">
+                                  <img src="assets/images/icons/cash.svg" loading="lazy" alt="" />
+                                </a>
+                              </div>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+                  <div class="contain">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              #
+                            </th>
+
+                            <th>
+                              الاشعار  
+                            </th>
+
+                            <th>
+                              الوقت
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              1
+                            </td>
+
+                            <td>
+                              لم يتم قبول منتجك
+                            </td>
+
+                            <td>
+                              April 10, 2022 09:44 AM
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              1
+                            </td>
+
+                            <td>
+                              لم يتم قبول منتجك
+                            </td>
+
+                            <td>
+                              April 10, 2022 09:44 AM
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
 
                 <div class="tab-pane fade" id="products" role="tabpanel" aria-labelledby="products-tab">
                   <div class="contain">
@@ -546,6 +955,246 @@
                     </div>
                   </div>
                 </div>
+                
+                <div class="tab-pane fade" id="buyer" role="tabpanel" aria-labelledby="buyer-tab">
+                  <div class="contain">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              الرقم
+                            </th>
+
+                            <th>
+                              المنتج  
+                            </th>
+
+                            <th>
+                              عرضي
+                            </th>
+
+                            <th>
+                              تاريخ العرض 
+                            </th>
+
+                            <th>
+                              الحالة
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              18000
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-warning text-light">
+                                pending
+                              </span>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              18000
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-danger text-light">
+                                refusesd
+                              </span>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              18000
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-success text-light">
+                                accepted
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="tab-pane fade" id="sale" role="tabpanel" aria-labelledby="sale-tab">
+                  <div class="contain">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              الرقم
+                            </th>
+
+                            <th>
+                              المنتج  
+                            </th>
+
+                            <th>
+                              سعر العرض 
+                            </th>
+
+                            <th>
+                              تاريخ العرض 
+                            </th>
+
+                            <th>
+                              الحالة
+                            </th>
+
+                            <th>
+                              العمليات
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              18000
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-warning text-light">
+                                pending
+                              </span>
+                            </td>
+
+                            <td>
+                              
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              18000
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-danger text-light">
+                                refusesd
+                              </span>
+                            </td>
+
+                            <td>
+                              
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              18000
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-success text-light">
+                                accepted
+                              </span>
+                            </td>
+
+                            <td>
+                              
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
 
                 <div class="tab-pane fade" id="favorite" role="tabpanel" aria-labelledby="favorite-tab">
                   <div class="contain">
@@ -663,6 +1312,118 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="question-tab">
+                  <div class="contain">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              الرقم
+                            </th>
+
+                            <th>
+                              المنتج  
+                            </th>
+
+                            <th>
+                              السؤال  
+                            </th>
+
+                            <th>
+                              تاريخ العرض 
+                            </th>
+
+                            <th>
+                              الحالة
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              هل يوجد تفاصيل اكثر عن المنتج الحالي	
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-warning text-light">
+                                pending
+                              </span>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              هل يوجد تفاصيل اكثر عن المنتج الحالي	
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-danger text-light">
+                                refusesd
+                              </span>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              4810	
+                            </td>
+
+                            <td>
+                              <a href="single-product.html" class="data">
+                                ماجيك الامبرا
+                              </a>
+                            </td>
+
+                            <td>
+                              هل يوجد تفاصيل اكثر عن المنتج الحالي	
+                            </td>
+
+                            <td>
+                              2022-04-10	
+                            </td>
+
+                            <td>
+                              <span class="badge badge-success text-light">
+                                accepted
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>

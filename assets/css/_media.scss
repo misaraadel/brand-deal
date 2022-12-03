@@ -189,4 +189,14 @@
   .mobile-hidden {
     display: none;
   }
+
+  .profile .table-responsive table th {
+    min-width: 140px !important;
+  }
+
+  .profile {
+    .filter-icon {
+      display: block !important;
+    }
+  }
 }
