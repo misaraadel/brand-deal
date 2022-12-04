@@ -1102,6 +1102,7 @@ button {
   height: 200px;
   position: relative;
   z-index: 9;
+  display: flex;
 }
 .product-box .image-content img {
   width: 100%;
