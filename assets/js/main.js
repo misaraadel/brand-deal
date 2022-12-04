@@ -26,6 +26,31 @@ $(document).ready(function () {
     $('body').toggleClass('overflowNone')
   });
 
+  $('.profile .filter-icon').click(function(){
+    $('.profile .profile-mobile-view').addClass('active-profile');
+    $('body').addClass('overflowNone')
+  });
+
+  $('.profile .close-icon').click(function(){
+    $('.profile .profile-mobile-view').removeClass('active-profile');
+    $('body').removeClass('overflowNone')
+  });
+
+  $('.profile .nav-item .nav-link').click(function(){
+    $('.profile .profile-mobile-view').removeClass('active-profile');
+    $('body').removeClass('overflowNone')
+  });
+
+  $('.products .filter-icon').click(function(){
+    $('.products .mobile-filter').addClass('active-filter');
+    $('body').addClass('overflowNone')
+  });
+
+  $('.products .close-icon').click(function(){
+    $('.products .mobile-filter').removeClass('active-filter');
+    $('body').removeClass('overflowNone')
+  });
+
   $('.sort-icon').click(function(){
     $('.sort-list').toggleClass('active');
   });

@@ -196,7 +196,68 @@
 
   .profile {
     .filter-icon {
-      display: block !important;
+      display: flex !important;
+      margin-inline-start: 25px;
+    }
+
+    .profile-card {
+      display: none;
+    }
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .mobile-filter {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    overflow-y: scroll;
+    z-index: 99999;
+    height: 100vh;
+    background-color: var(--light-color);
+    transition: all .3s linear;
+
+    &.active-filter {
+      right: 0px;
+    }
+
+    .close-icon {
+      display: flex;
+    }
+  }
+
+  .products .form-search {
+    height: 40px;
+
+    .search-btn{
+      width: 70px !important;
+    }
+
+    .form-control {
+      padding-inline-end: 70px !important;
+    }
+  }
+
+  .products {
+    .sort-contain .sort-icon {
+      width: 40px !important;
+      height: 40px !important;
+      margin: auto !important;
+    }
+  }
+
+  .profile-mobile-view {
+    border-radius: 0px !important;
+    display: block !important;
+
+    .close-icon {
+      display: flex !important;
+    }
+
+    .image-content {
+      margin: auto;
     }
   }
 }
