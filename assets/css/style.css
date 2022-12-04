@@ -1057,6 +1057,31 @@ button {
           animation: storm 0.4s linear;
 }
 
+#countdown {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#countdown ul {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#countdown ul li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#countdown ul li:last-child {
+  -webkit-margin-end: 0px !important;
+          margin-inline-end: 0px !important;
+}
+
 .general-section {
   width: 100%;
   padding: 40px 0px;
@@ -2767,6 +2792,13 @@ footer .copyrights p {
 .single-product.semi-white {
   background-color: #fefefe;
 }
+.single-product #countdown {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.single-product #countdown ul {
+  justify-content: flex-start;
+}
 .single-product .contain .type {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -2889,7 +2921,7 @@ footer .copyrights p {
 }
 .single-product .prodcutDetailsSwiper .swiper-slide {
   width: 100%;
-  height: 250px;
+  height: 280px;
 }
 .single-product .prodcutDetailsSwiper .swiper-slide img {
   width: 100% !important;

@@ -209,7 +209,7 @@
                 <div class="close-icon">
                   <img src="assets/images/icons/close.svg" loading="lazy" alt="" />
                 </div>
-                
+
                 <h1 class="category-head">
                   فرز
                 </h1>
@@ -598,26 +598,64 @@
                         سقنتشر
                       </a>
   
-                      <p class="desc">
-                        Van Cleef
-                      </p>
+                      <div class="d-flex justify-content-between align-content-center align-content-center">
+                        <p class="desc mb-0">
+                          Van Cleef
+                        </p>
   
-                      <div class="flex-data">
-                        <p>
+                        <p class="mb-0">
                           20,000
   
                           <span>
                             ريال
                           </span>
                         </p>
+                      </div>
   
-                        <a href="#" class="custom-btn">
-                          <span class="count_down_product d-block color-primary ms-2"></span>
+                      <div class="flex-data">
+                        <div id="countdown">
+                          <ul>
+                            <li>
+                              <span class="number" id="seconds"></span>
+                              <span class="name">
+                                ثانية
+                              </span>
+                            </li>
 
-                          <span class="mx-1">
-                            ساعه
-                          </span>
-                        </a>
+                            <li>
+                              :
+                            </li>
+
+                            <li>
+                              <span class="number" id="minutes"></span>
+                              <span class="name">
+                                دقيقة
+                              </span>
+                            </li>
+
+                            <li>
+                              :
+                            </li>
+
+                            <li>
+                              <span class="number" id="hours"></span>
+                              <span class="name">
+                                ساعة
+                              </span>
+                            </li>
+
+                            <li>
+                              :
+                            </li>
+
+                            <li>
+                              <span class="number" id="days"></span>
+                              <span class="name">
+                                يوم
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1102,5 +1140,41 @@
     <script src="assets/js/lib/swiper-bundle.min.js"></script>
     <script src="assets/js/lib/price_range_script.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+      (function () {
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+      
+        let offer= "May 16, 2023 00:00:00",
+          countDown = new Date(offer).getTime(),
+          x = setInterval(function() {    
+
+            let now = new Date().getTime(),
+              distance = countDown - now;
+
+            document.getElementById("days").innerText = Math.floor(distance / (day)),
+            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+            //do something later when date is reached
+            if (distance < 0) {
+              let headline = document.getElementById("headline"),
+              countdown = document.getElementById("countdown"),
+              content = document.getElementById("content");
+
+              headline.innerText = "أنتهي الوقت الان";
+              countdown.style.display = "none";
+              content.style.display = "block";
+
+              clearInterval(x);
+            }
+            //seconds
+          }, 0)
+      }());
+    </script>
   </body>
 </html>

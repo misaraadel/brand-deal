@@ -255,3 +255,5 @@ $(document).ready(function() {
     });
   });
 });
+
+// let countDown = new Date().getTime()
